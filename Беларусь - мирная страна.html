@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0143)file:///C:/Users/Margosha/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81/index.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Беларусь - мирная страна</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/736x/92/9b/d2/929bd27f23910cfd983f964031efaca8.jpg'); /* Изображение камуфляжа */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            background: rgba(77, 93, 51, 0.8); /* полупрозрачный цвет хаки */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        section {
+            flex: 0 1 calc(30% - 20px); /* Ширина секций: 30% с учетом отступов */
+            padding: 20px;
+            margin: 10px;
+            background: rgba(77, 93, 51, 0.7); /* полупрозрачный цвет хаки */
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards; /* Анимация появления */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(77, 93, 51, 0.8); /* полупрозрачный цвет хаки */
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gallery {
+            position: relative;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: none; /* Скрываем все изображения по умолчанию */
+        }
+        .gallery img.active {
+            display: block; /* Показываем только активное изображение */
+            animation: fadeIn 1s; /* Анимация перехода */
+        }
+        .gallery-button {
+            cursor: pointer;
+            margin: 5px;
+            padding: 10px 15px;
+            background: rgba(77, 93, 51, 0.8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Медиазапрос для мобильных устройств */
+        @media (max-width: 768px) {
+            section {
+                flex: 0 1 100%; /* Ширина секций: 100% на мобильных */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Беларусь - мирная страна</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Военно-патриотические клубы</h2>
+        <p>В Беларуси активно работают военно-патриотические клубы, такие как "Орлята". Этот клуб объединяет молодежь, обучая их основам военно-патриотического воспитания, физической подготовке и навыкам гражданской обороны. Участники клуба участвуют в различных соревнованиях, акциях и мероприятиях, направленных на развитие патриотизма и уважения к истории своей страны.</p>
+
+        <div class="gallery">
+           <img src="./Беларусь - мирная страна_files/CIcXLWiP09JaglIXejEx_prGKQXrRToW-mMhlWHgGeC9CFxd_NxabfmdmcvbGARusZVkkQMx4mqvyH_YdgN4cJxv.jpg" alt="Клубы 1" class="active">
+           <img src="./Беларусь - мирная страна_files/xBjcek5smBiWcWS1_WOqqWVEhez_I_R6RroLNwNj6Ze6qvBpsGHNV_qt5zEIz6LcMS3hKPnOitA-iuewY8zg5yLW.jpg" alt="Клубы 2">
+            <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Места памяти</h2>
+        <p>Сейчас в Беларуси сохраняются памятники и мемориалы, посвященные тем, кто защищал свою родину. Мемориальный комплекс "Хатынь" является символом памяти жертв войны и страданий населения. Эти места важны для памяти и воспитания патриотизма у будущих поколений.</p>
+        
+        <p>Брестская крепость — символ мужества и стойкости белорусского народа. Во время Второй мировой войны она подверглась жестоким атакам, и ее защитники проявили невероятное мужество. Мемориальный комплекс в крепости служит напоминанием о подвиге героев.</p>
+        
+        <p>Площадь Победы в Минске — это важное место памяти, где проходят торжественные мероприятия и парады. В центре площади находится памятник "Отец Родной", посвященный защитникам Отечества.</p>
+
+        <div class="gallery">
+            <img src="./Беларусь - мирная страна_files/347457515438398.jpeg" alt="Памятник 1" class="">
+            <img src="./Беларусь - мирная страна_files/a808a662-3c04-532e-b409-10ce0fcefb75" alt="Памятник 2" class="active">
+            <img src="./Беларусь - мирная страна_files/scale_1200" alt="Памятник 3" class="">
+            <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+        </div>
+    </section>
+
+    <section>
+    <h2>Великая Отечественная война</h2>
+    <p>Великая Отечественная война стала одним из самых трагических и героических периодов в истории Беларуси. С 1941 по 1945 год страна пережила тяжелые испытания, когда фашистская Германия оккупировала ее территории. Многие города и деревни были разрушены, а миллионы людей стали жертвами войны.</p>
+    <p>Беларусь стала ареной ожесточенных боев, и в ней проходили важные сражения, такие как битва за Минск и битва за Слуцк. Партизанское движение, активно действовавшее в тылу врага, играло ключевую роль в сопротивлении оккупантам. Партизаны совершали смелые операции, уничтожая вражеские гарнизоны и sabotируя транспортные пути.</p>
+    <p>Победа в Великой Отечественной войне стала символом мужества и стойкости белорусского народа. Каждый год в стране проходят мероприятия, посвященные памяти солдат, сражавшихся за свободу и независимость. Памятники и мемориалы, такие как "Брестская крепость" и "Хатынь", напоминают о героизме и трагедии тех времен.</p>
+
+    <div class="gallery">
+        <img src="./Беларусь - мирная страна_files/d2e5e8de-4f19-5803-87ef-8034029e4324" alt="Война 1" class="active">
+        <img src="./Беларусь - мирная страна_files/20_bce.jpg" alt="Война 2">
+        <img src="./Беларусь - мирная страна_files/scale_1200(1)" alt="Война 3">
+        <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+    </div>
+</section>
+
+    <section>
+        <h2>Герои Великой Отечественной войны</h2>
+        <p>Среди известных воинов можно отметить Иона Солтыса, который стал героем за свои подвиги в боях. Он командовал партизанским отрядом и провел множество операций против оккупантов, за что был награжден медалью "За отвагу". Солтыс стал символом борьбы и мужества белорусов в тяжелые времена.</p>
+        <p>Другие герои, такие как маршал Георгий Жуков и генерал-майор Александр Суворов, также внесли значительный вклад в защиту страны и освободительные операции.</p>
+
+        <div class="gallery">
+             <img src="./Беларусь - мирная страна_files/i" alt="Герои 1" class="active">
+             <img src="./Беларусь - мирная страна_files/scale_1200(2)" alt="Герои 2" class="">
+             <img src="./Беларусь - мирная страна_files/i(1)" alt="Герои 3" class="">
+            <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Культура и Традиции</h2>
+        <img src="./Беларусь - мирная страна_files/national_clothing.jpg" alt="Национальная одежда Беларуси">
+        <p>Национальная одежда Беларуси характеризуется яркими цветами и уникальными узорами. Традиционные костюмы включают вышитые рубашки, юбки и платья, часто с использованием льняных и шерстяных тканей. Женская одежда часто украшена вышивкой, а мужская включает в себя рубашки и штаны, которые носили с поясами.</p>
+        <p>Белорусская кухня богата блюдами из картофеля, мяса и молочных продуктов. Драники, галушки, борщ и пироги — это лишь некоторые из популярных блюд, которые стоит попробовать. Каждое блюдо имеет свою историю и традиции приготовления, передаваемые из поколения в поколение.</p>
+
+        <div class="gallery">
+            <img src="./Беларусь - мирная страна_files/02f45a69dc722483f9388aa38e5aca7a.jpg" alt="Культура 1" class="">
+            <img src="./Беларусь - мирная страна_files/c708e6f0e15d43c6fb01daaf6b0c31bf.jpg" alt="Культура 2" class="">
+            <img src="./Беларусь - мирная страна_files/bdc21c33a282555e1cefc1b3da88f263.jpg" alt="Культура 3" class="active">
+            <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Природа Беларуси</h2>
+        <p>Беларусь известна своей живописной природой, обширными зелеными полями и спокойными реками. Здесь можно найти множество красивых мест, которые вдохновляют на патриотизм и гордость за свою страну.</p>
+        <p>Страна славится своими лесами, которые занимают около 40% территории. Это важные экосистемы, в которых обитают редкие виды животных и растений. Озера и реки Беларуси, такие как Нарочь и Днепр, привлекают туристов и рыбаков со всего мира.</p>
+        <p>Национальный парк "Беловежская пуща" является объектом всемирного наследия ЮНЕСКО и домом для зубров, символа белорусской природы.</p>
+
+        <div class="gallery">
+            <img src="./Беларусь - мирная страна_files/i(2)" alt="Природа 1" class="active">
+            <img src="./Беларусь - мирная страна_files/d00e8d9aa98eaa2b896b46b4bf008b30.jpg" alt="Природа 2" class="">
+            <img src="./Беларусь - мирная страна_files/les-1705.jpg" alt="Природа 3" class="">
+            <button class="gallery-button" onclick="changeImage(this)">Сменить изображение</button>
+        </div>
+    </section>
+</div>
+
+
+<script>
+    function changeImage(button) {
+        const gallery = button.parentElement;
+        const images = gallery.getElementsByTagName('img');
+        let currentIndex = 0;
+
+        for (let i = 0; i < images.length; i++) {
+            if (images[i].classList.contains('active')) {
+                currentIndex = i;
+                images[i].classList.remove('active');
+                break;
+            }
+        }
+
+        const nextIndex = (currentIndex + 1) % images.length;
+        images[nextIndex].classList.add('active');
+    }
+</script>
+
+
+</body></html>
